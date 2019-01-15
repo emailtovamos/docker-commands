@@ -12,3 +12,7 @@ Commands for docker, Dockerfile and docker-compose
 - Access a process running on docker (e.g. having the number: 1e91702267b7 ): 
 
   ```docker exec -it 1e91702267b7 sh```
+  
+- Get ip of docker machine: 
+
+  ```docker-machine ip```
