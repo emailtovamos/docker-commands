@@ -5,6 +5,14 @@ Commands for docker, Dockerfile and docker-compose
 
   ```docker build -t <imagename>:tag .```
   
+- Build Docker image with no cache. This is very important if you are making changes to the same file and Docker may think it hasn't changed. So it is always safe to use the following command to build Docker image when in doubt: 
+
+  ```docker build --no-cache -t <imagename>:tag .```
+  
+  e.g.
+
+  ```docker build --no-cache -t emailtovamos/game-repo:v02 .```
+  
 - If you want to push the image to registry of docker: 
 
   ```docker push <imagename>:tag```
