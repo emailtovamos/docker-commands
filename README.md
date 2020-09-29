@@ -1,6 +1,10 @@
 # docker-commands
 Commands for docker, Dockerfile and docker-compose
 
+- Get current Docker version
+
+  ```docker -version```
+
 - Once Dockerfile is ready, the command to build the image: 
 
   ```docker build -t <imagename>:tag .```
@@ -13,9 +17,13 @@ Commands for docker, Dockerfile and docker-compose
 
   ```docker build --no-cache -t emailtovamos/game-repo:v02 .```
   
+- Pull a particular Docker image
+
+  ```docker pull <imageName>```  
+
 - If you want to push the image to registry of docker: 
 
-  ```docker push <imagename>:tag```
+  ```docker push <imageName>:tag```
 
 - Access a process running on docker (e.g. having the number: 1e91702267b7 ): 
 
@@ -24,3 +32,23 @@ Commands for docker, Dockerfile and docker-compose
 - Get ip of docker machine: 
 
   ```docker-machine ip```
+
+- docker-compose start
+
+  ```docker-compose up```  
+
+- docker-compose stop everything
+
+  ```docker-compose down```  
+  
+- ssh into a running container
+
+  ```docker exec -it <containerId> bash```
+
+- login to your docker-hub
+
+  ```docker login```
+  
+- logout of docker-hub
+
+  ```docker logout```
