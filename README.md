@@ -17,6 +17,10 @@ Commands for docker, Dockerfile and docker-compose
 
   ```docker build --no-cache -t emailtovamos/game-repo:v02 .```
   
+- Retag a local image with a new image name and tag before pushing to dockerhub:
+
+  ```docker tag mylocalimage:1.0 myrepo/myimage:2.0```
+  
 - Pull a particular Docker image
 
   ```docker pull <imageName>```  
