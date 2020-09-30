@@ -24,6 +24,10 @@ Commands for docker, Dockerfile and docker-compose
 - If you want to push the image to registry of docker: 
 
   ```docker push <imageName>:tag```
+  
+- See all images: 
+
+  ```docker images```
 
 - Access a process running on docker (e.g. having the number: 1e91702267b7 ): 
 
@@ -32,6 +36,16 @@ Commands for docker, Dockerfile and docker-compose
 - Get ip of docker machine: 
 
   ```docker-machine ip```
+  
+- Stop/Kill a container:
+
+  ```docker stop <containerId>```
+  ```docker kill <containerId>```
+  
+- Stop & Remove all containers: 
+
+  ```docker stop $(docker ps -a -q)```
+  ```docker rm $(docker ps -a -q)```
 
 - docker-compose start
 
@@ -52,3 +66,7 @@ Commands for docker, Dockerfile and docker-compose
 - logout of docker-hub
 
   ```docker logout```
+  
+- Delete image from local storge: 
+
+  ```docker rmi <imageName>```
