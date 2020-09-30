@@ -3,7 +3,7 @@ Commands for docker, Dockerfile and docker-compose
 
 - Get current Docker version
 
-  ```docker -version```
+  ```docker --version```
 
 - Once Dockerfile is ready, the command to build the image: 
 
